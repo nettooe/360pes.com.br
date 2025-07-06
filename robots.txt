@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: *
+
+Sitemap: https://360pes.com.br/sitemap.xml
