@@ -99,3 +99,17 @@ test("arquivos estáticos e falhas não são convertidos em Markdown", async () 
     const missing = await worker.fetch(new Request("https://360pes.com.br/ausente"), env);
     assert.equal(missing.status, 404);
 });
+
+test("links do WhatsApp preenchem a mensagem com acentos preservados", async () => {
+    const message = "Olá! Gostaria de saber mais sobre os cuidados da 360Pés e agendar um atendimento.";
+    for (const file of ["index.html", "index.md"]) {
+        const content = await readFile(new URL(file, root), "utf8");
+        const links = [...content.matchAll(/https:\/\/wa\.me\/[^\s"<)]+/g)];
+        assert.ok(links.length > 0, file);
+        for (const [link] of links) {
+            const url = new URL(link);
+            assert.equal(url.pathname, "/5514991270570");
+            assert.equal(url.searchParams.get("text"), message);
+        }
+    }
+});

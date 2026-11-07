@@ -25,7 +25,7 @@ Podologia não é apenas sobre tratar dos pés, é sobre cuidar da base que sust
 
 Agende um horário ou saiba mais através dos nossos canais de atendimento:
 
-- Celular e WhatsApp: [(14) 9-9127-0570](https://wa.me/5514991270570)
+- Celular e WhatsApp: [(14) 9-9127-0570](https://wa.me/5514991270570?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20cuidados%20da%20360P%C3%A9s%20e%20agendar%20um%20atendimento.)
 - E-mail: [atendimento@360pes.com.br](mailto:atendimento@360pes.com.br?subject=Quero%20saber%20mais)
 - Site: https://360pes.com.br/
 
@@ -73,7 +73,7 @@ Os valores e a disponibilidade são informados diretamente pelo WhatsApp. Você 
         "telephone": "+55-14-99127-0570",
         "contactType": "Agendamento",
         "availableLanguage": "pt-BR",
-        "url": "https://wa.me/5514991270570"
+        "url": "https://wa.me/5514991270570?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20cuidados%20da%20360P%C3%A9s%20e%20agendar%20um%20atendimento."
       }
     },
     {
